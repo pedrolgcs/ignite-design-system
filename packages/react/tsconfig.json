@@ -1,0 +1,11 @@
+{
+  "extends": "@ignite-ui/ts-config/react.json",
+  "compilerOptions": {
+    "rootDirs": ["src"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src"]
+}
