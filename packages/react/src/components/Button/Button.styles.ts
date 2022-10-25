@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { styled } from '@/styles'
 
 export const Button = styled('button', {
@@ -87,5 +86,3 @@ export const Button = styled('button', {
     size: 'md',
   },
 })
-
-export type ButtonProps = React.ComponentProps<typeof Button>
