@@ -1,3 +1,4 @@
+import * as React from 'react'
 import { styled } from '@/styles'
 
 export const Box = styled('div', {
@@ -6,3 +7,7 @@ export const Box = styled('div', {
   backgroundColor: '$gray800',
   border: '1px solid $gray600',
 })
+
+export type BoxStyleProps = React.ComponentProps<typeof Box> & {
+  as?: React.ElementType
+}

@@ -1,7 +1,6 @@
-import * as React from 'react'
 import * as S from './Button.styles'
 
-export type ButtonProps = React.ComponentProps<typeof S.Button>
+export type ButtonProps = S.ButtonStyleProps & {}
 
 function Button(props: ButtonProps) {
   return <S.Button {...props} />

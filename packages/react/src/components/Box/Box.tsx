@@ -1,7 +1,6 @@
-import * as React from 'react'
 import * as S from './Box.styles'
 
-export type BoxProps = React.ComponentProps<typeof S.Box> & {}
+export type BoxProps = S.BoxStyleProps & {}
 
 function Box(props: BoxProps) {
   return <S.Box {...props} />
