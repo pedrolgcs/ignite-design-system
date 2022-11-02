@@ -9,3 +9,6 @@ export type { TextProps } from './Text/Text'
 
 export { default as Heading } from './Heading/Heading'
 export type { HeadingProps } from './Heading/Heading'
+
+export { default as Avatar } from './Avatar/Avatar'
+export type { AvatarProps } from './Avatar/Avatar'
