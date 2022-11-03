@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Button, ButtonProps } from '@ignite-ui/react'
+import { ArrowRight } from 'phosphor-react'
 
 export default {
   title: 'Form/Button',
@@ -57,5 +58,30 @@ export const Small: StoryObj<ButtonProps> = {
 export const Disabled: StoryObj<ButtonProps> = {
   args: {
     disabled: true,
+  },
+}
+
+export const WithIcon: StoryObj<ButtonProps> = {
+  args: {
+    children: (
+      <>
+        Próximo passo
+        <ArrowRight weight="bold" />
+      </>
+    ),
+  },
+  argTypes: {
+    children: {
+      table: {
+        disable: true,
+      },
+    },
+  },
+}
+
+export const CustomTag: StoryObj<ButtonProps> = {
+  args: {
+    children: 'Custom tag',
+    as: 'a',
   },
 }

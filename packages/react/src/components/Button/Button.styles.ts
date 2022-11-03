@@ -11,6 +11,7 @@ export const Button = styled('button', {
   minWidth: 120,
   boxSizing: 'border-box',
   padding: '0 $4',
+  transition: '0.5s',
 
   display: 'flex',
   alignItems: 'center',
