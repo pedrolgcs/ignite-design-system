@@ -12,3 +12,6 @@ export type { HeadingProps } from './Heading/Heading'
 
 export { default as Avatar } from './Avatar/Avatar'
 export type { AvatarProps } from './Avatar/Avatar'
+
+export { default as TextInput } from './TextInput/TextInput'
+export type { TextInputProps } from './TextInput/TextInput'
