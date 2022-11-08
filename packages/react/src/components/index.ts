@@ -25,3 +25,7 @@ export type { TextInputProps } from './TextInput/TextInput'
 // TextArea
 export { default as TextArea } from './TextArea/TextArea'
 export type { TextAreaProps } from './TextArea/TextArea'
+
+// Checkbox
+export { default as Checkbox } from './Checkbox/Checkbox'
+export type { CheckboxProps } from './Checkbox/Checkbox'
