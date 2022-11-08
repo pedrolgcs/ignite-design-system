@@ -29,3 +29,7 @@ export type { TextAreaProps } from './TextArea/TextArea'
 // Checkbox
 export { default as Checkbox } from './Checkbox/Checkbox'
 export type { CheckboxProps } from './Checkbox/Checkbox'
+
+// Checkbox
+export { default as MultiStep } from './MultiStep/MultiStep'
+export type { MultiStepProps } from './MultiStep/MultiStep'
