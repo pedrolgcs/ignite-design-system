@@ -6,4 +6,6 @@ function Text(props: TextProps) {
   return <S.Text {...props} />
 }
 
+Text.displayName = 'Text'
+
 export default Text

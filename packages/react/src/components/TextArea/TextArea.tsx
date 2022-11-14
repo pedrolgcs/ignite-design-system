@@ -6,4 +6,6 @@ function TextArea(props: TextAreaProps) {
   return <S.TextArea {...props} />
 }
 
+TextArea.displayName = 'TextArea'
+
 export default TextArea

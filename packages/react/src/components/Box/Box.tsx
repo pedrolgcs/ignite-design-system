@@ -6,4 +6,6 @@ function Box(props: BoxProps) {
   return <S.Box {...props} />
 }
 
+Box.displayName = 'Box'
+
 export default Box

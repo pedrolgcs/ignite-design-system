@@ -12,7 +12,7 @@ export default {
         as="label"
         css={{ display: 'flex', alignItems: 'center', gap: '$2' }}
       >
-        <Story />
+        {Story()}
         <Text size="sm">Accept terms of use</Text>
       </Box>
     ),

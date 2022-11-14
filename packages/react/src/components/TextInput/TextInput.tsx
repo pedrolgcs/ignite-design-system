@@ -1,4 +1,3 @@
-import * as React from 'react'
 import * as S from './TextInput.styles'
 
 export type TextInputProps = S.InputProps & {
@@ -14,5 +13,7 @@ function TextInput({ prefix, ...props }: TextInputProps) {
     </S.TextInputContainer>
   )
 }
+
+TextInput.displayName = 'TextInput'
 
 export default TextInput

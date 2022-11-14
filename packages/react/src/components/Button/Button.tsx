@@ -9,4 +9,6 @@ function Button(props: ButtonProps) {
   return <S.Button {...props} />
 }
 
+Button.displayName = 'Button'
+
 export default Button
