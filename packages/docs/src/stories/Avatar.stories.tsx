@@ -8,7 +8,13 @@ export default {
     src: 'https://github.com/pedrolgcs.png',
     alt: 'Pedro Henrique',
   },
-  argTypes: {},
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
