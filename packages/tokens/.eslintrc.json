@@ -1,3 +1,3 @@
 {
-  "extends": "@ignite-ui/eslint-config"
+  "extends": "@pedrolgcs-ignite-ui/eslint-config"
 }
