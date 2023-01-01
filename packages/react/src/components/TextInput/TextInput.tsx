@@ -1,19 +1,26 @@
+import React from 'react'
 import * as S from './TextInput.styles'
 
-export type TextInputProps = S.InputProps & {
-  prefix?: string
-}
+export type TextInputProps = Omit<S.InputProps, 'size'> &
+  S.TextInputContainerProps & {
+    prefix?: string
+  }
 
-function TextInput({ prefix, ...props }: TextInputProps) {
+function TextInput(
+  { prefix, size, ...props }: TextInputProps,
+  ref: React.Ref<HTMLInputElement>,
+) {
   return (
-    <S.TextInputContainer>
+    <S.TextInputContainer size={size}>
       {!!prefix && <S.Prefix>{prefix}</S.Prefix>}
 
-      <S.Input {...props} />
+      <S.Input {...props} ref={ref} />
     </S.TextInputContainer>
   )
 }
 
-TextInput.displayName = 'TextInput'
+const TextInputWithRef = React.forwardRef(TextInput)
 
-export default TextInput
+TextInputWithRef.displayName = 'TextInput'
+
+export default TextInputWithRef
