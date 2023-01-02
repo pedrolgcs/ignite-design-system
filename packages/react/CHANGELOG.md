@@ -1,5 +1,11 @@
 # @pedrolgcs-ignite-ui/react
 
+## 1.2.0
+
+### Minor Changes
+
+- refactor box component
+
 ## 1.1.0
 
 ### Minor Changes

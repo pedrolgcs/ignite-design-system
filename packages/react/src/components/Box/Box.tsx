@@ -1,9 +1,15 @@
-import * as S from './Box.styles'
+import * as React from 'react'
+import { styled } from '@/styles'
 
-export type BoxProps = S.BoxStyleProps & {}
+const Box = styled('div', {
+  padding: '$6',
+  borderRadius: '$md',
+  backgroundColor: '$gray800',
+  border: '1px solid $gray600',
+})
 
-function Box(props: BoxProps) {
-  return <S.Box {...props} />
+export interface BoxProps extends React.ComponentProps<typeof Box> {
+  as?: React.ElementType
 }
 
 Box.displayName = 'Box'

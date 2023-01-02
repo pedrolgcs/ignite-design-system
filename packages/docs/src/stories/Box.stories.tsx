@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react'
-import { Box, Text, BoxProps } from '@pedrolgcs-ignite-ui/react'
+import type { Meta, StoryObj } from '@storybook/react';
+import { Box, Text, TextInput, BoxProps } from '@pedrolgcs-ignite-ui/react';
 
 export default {
   title: 'Surfaces/Box',
@@ -21,6 +21,13 @@ export default {
       },
     },
   },
-} as Meta<BoxProps>
+} as Meta<BoxProps>;
 
-export const Primary: StoryObj<BoxProps> = {}
+export const Primary: StoryObj<BoxProps> = {};
+
+export const CustomTag: StoryObj<BoxProps> = {
+  args: {
+    as: 'form',
+    children: <TextInput prefix="ignite.call/" placeholder='seu-usuario' />,
+  },
+};
