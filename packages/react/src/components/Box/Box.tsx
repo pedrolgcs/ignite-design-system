@@ -1,11 +1,14 @@
+import * as React from 'react'
 import * as S from './Box.styles'
 
 export type BoxProps = S.BoxStyleProps & {}
 
-function Box(props: BoxProps) {
-  return <S.Box {...props} />
+function Box(props: BoxProps, ref: React.Ref<HTMLElement>) {
+  return <S.Box {...props} ref={ref} />
 }
 
-Box.displayName = 'Box'
+const BoxWithRef = React.forwardRef(Box)
 
-export default Box
+BoxWithRef.displayName = 'Box'
+
+export default BoxWithRef
