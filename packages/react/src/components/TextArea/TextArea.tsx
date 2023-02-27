@@ -1,11 +1,14 @@
+import * as React from 'react'
 import * as S from './TextArea.styles'
 
 export type TextAreaProps = S.TextAreaStyleProps & {}
 
-function TextArea(props: TextAreaProps) {
-  return <S.TextArea {...props} />
+function TextArea(props: TextAreaProps, ref: React.Ref<HTMLTextAreaElement>) {
+  return <S.TextArea {...props} ref={ref} />
 }
 
-TextArea.displayName = 'TextArea'
+const TextAreaWithRef = React.forwardRef(TextArea)
 
-export default TextArea
+TextAreaWithRef.displayName = 'TextArea'
+
+export default TextAreaWithRef
