@@ -1,0 +1,2 @@
+import{A as t}from"./index.b142189a.js";import"./index.3d42d841.js";import"./iframe.a4051947.js";import"./jsx-runtime.29459a68.js";import"./index.301b9d6a.js";const i={title:"Data display/Avatar",component:t,args:{src:"https://github.com/pedrolgcs.png",alt:"Pedro Henrique"},argTypes:{src:{control:{type:"text"}}}},p={},c={args:{src:void 0}},l=["Primary","WithFallback"];export{p as Primary,c as WithFallback,l as __namedExportsOrder,i as default};
+//# sourceMappingURL=Avatar.stories.7d8dbaed.js.map
